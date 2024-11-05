@@ -1,0 +1,16 @@
+ktor:
+  development: false
+  deployment:
+    port: 8080
+    watch:
+      - build/classes/kotlin/jvm/main
+
+  application:
+    modules:
+      - com.just.tracker.ServerApplicationKt.module
+
+db:
+  driver: "org.h2.Driver"
+  jdbcUrl: "jdbc:h2:mem:test"
+  username: null
+  password: null

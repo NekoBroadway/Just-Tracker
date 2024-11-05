@@ -10,8 +10,9 @@ pluginManagement {
                 includeGroupAndSubgroups("com.google")
             }
         }
-        mavenCentral()
         gradlePluginPortal()
+        mavenCentral()
+        mavenLocal()
     }
 }
 
@@ -25,9 +26,10 @@ dependencyResolutionManagement {
             }
         }
         mavenCentral()
+        mavenLocal()
     }
 }
 
 include(":composeApp")
-include(":server")
+include(":fullstackApp")
 include(":shared")
